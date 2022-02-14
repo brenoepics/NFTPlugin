@@ -24,4 +24,5 @@ You just need to put on a special look and you will get the effect automatically
 |----------------------|---------------|
 | cmd_update_looks            | 0             |
 
+<img src="https://imgur.com/qO5UGTi.gif" align="center" />
 My Discord: BrenoEpic#9671
