@@ -42,11 +42,15 @@ public class ClothingManager
     }
 
     public Clothing getClothingBySetId(final int setId) {
-        return this.clothes.values().stream().filter(clothing -> clothing.getType().equals("setid") && Integer.parseInt(clothing.getSet()) == setId).findFirst().orElse(null);
+        return this.clothes.values().stream().filter(clothing -> clothing.getSet() != null && clothing.getType().equals("setid") && Integer.parseInt(clothing.getSet()) == setId).findFirst().orElse(null);
     }
 
     public Clothing getClothing(final String figure) {
-        return this.clothes.values().stream().filter(clothing -> clothing.getType().equals("figure") && clothing.getSet().equals(figure)).findFirst().orElse(null);
+        return this.clothes.values().stream().filter(clothing ->
+                        clothing.getSet() != null &&
+                        clothing.getType().equals("figure") &&
+                        clothing.getSet().equals(figure))
+                .findFirst().orElse(null);
     }
 
     public List<Integer> getEffectList(){
