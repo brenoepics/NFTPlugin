@@ -46,11 +46,7 @@ public class ClothingManager
     }
 
     public Clothing getClothing(final String figure) {
-        return this.clothes.values().stream().filter(clothing ->
-                        clothing.getSet() != null &&
-                        clothing.getType().equals("figure") &&
-                        clothing.getSet().equals(figure))
-                .findFirst().orElse(null);
+        return this.clothes.values().stream().filter(clothing -> clothing.getSet() != null && clothing.getType().equals("figure") && clothing.getSet().equals(figure)).findFirst().orElse(null);
     }
 
     public List<Integer> getEffectList(){
