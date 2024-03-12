@@ -3,6 +3,10 @@
 NFT Avatar Plugin is a plugin for Arcturus Morningstar 3.5.x,
 it allows you to add custom enables per avatar or clothing.
 
+> [!WARNING]  
+> This version is not maintained anymore,
+> please use the new Kotlin version [here](https://github.com/brenoepics/NFTPlugin)
+
 ## How can I install it?
 
 1. Download a pre-compiled version. [NFT-Avatar-Plugin](https://github.com/brenoepics/nftplugin/releases/)
