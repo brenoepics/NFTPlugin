@@ -3,10 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.brenoepic</groupId>
-    <artifactId>Special-Looks</artifactId>
-    <version>1.0</version>
+    <artifactId>NFTAvatarPlugin</artifactId>
+    <version>2.0</version>
     <build>
         <plugins>
             <plugin>
@@ -23,13 +22,24 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
-            <groupId>com.eu.habbo</groupId>
-            <artifactId>Habbo</artifactId>
-            <version>3.0.0</version>
+            <groupId>com.github.brenoepics</groupId>
+            <artifactId>morningstar</artifactId>
+            <version>3-5-0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
 </project>

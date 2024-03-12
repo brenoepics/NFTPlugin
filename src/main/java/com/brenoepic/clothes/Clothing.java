@@ -1,9 +1,12 @@
 package com.brenoepic.clothes;
 
+import lombok.Getter;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
+@Getter
 public class Clothing
 {
     private final int id;
@@ -17,19 +20,4 @@ public class Clothing
         else this.set = result.getString("setid");
         this.effect = result.getInt("effect");
     }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public String getType() { return this.type; }
-
-    public String getSet() {
-        return this.set;
-    }
-
-    public int getEffect() {
-        return this.effect;
-    }
-
 }
